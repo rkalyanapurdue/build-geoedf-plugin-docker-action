@@ -1,0 +1,9 @@
+# action.yml
+name: 'Track Changes'
+description: 'Return a list of folders in the repo that have file changes'
+outputs:
+  folders: 
+    description: 'List of repo folders with file changes'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
