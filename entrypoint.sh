@@ -18,6 +18,6 @@ do
 done
 echo "::set-output name=folders::${res[*]}"
 
-hpccm --recipe recipe.hpccm --format singularity > Singularity.def
+hpccm --recipe recipe.hpccm --format singularity --singularity-version=3.2 > Singularity.def
 
 singularity build image.sif Singularity.def
